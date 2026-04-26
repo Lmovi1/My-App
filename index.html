@@ -13,17 +13,29 @@
 </head>
 <body>
 <div class="box">
-    <h1 id="title">နှုတ်ခွန်းဆက်သခြင်း</h1>
-    <button onclick="sayHello()">နှိပ်ကြည့်ပါ</button>
+    <h2>ဂဏန်းမှန်းတမ်း ကစားကြမယ်</h2>
+    <p>၁ ကနေ ၁၀ ကြားထဲက ဂဏန်းတစ်ခု ရိုက်ထည့်ပါ</p>
+    
+    <input type="number" id="userInput" placeholder="ဂဏန်းရိုက်ပါ">
+    <button onclick="checkNumber()">စစ်ဆေးမယ်</button>
+    
+    <h3 id="result"></h3>
 </div>
 
 <script>
-    function sayHello() {
-        // ၁။ Variable တစ်ခု ဆောက်လိုက်တယ်
-        let name = "သူငယ်ချင်း"; 
+    function checkNumber() {
+        // ၁။ User ရိုက်လိုက်တဲ့ ဂဏန်းကို ဗူးထဲထည့်မယ်
+        let guess = document.getElementById("userInput").value;
+        let secretNum = 7; // ကျွန်တော်တို့ သတ်မှတ်ထားတဲ့ လျှို့ဝှက်နံပါတ်
         
-        // ၂။ အဲဒီ Variable ကို သုံးပြီး Website က စာသားကို ပြောင်းလိုက်မယ်
-        document.getElementById("title").innerHTML = "မင်္ဂလာပါ " + name + " ရေ...";
+        // ၂။ If-Else နဲ့ စစ်ဆေးမယ်
+        if (guess == secretNum) {
+            document.getElementById("result").innerHTML = "မှန်သွားပြီ! တော်လိုက်တာ။ 🥳";
+            document.getElementById("result").style.color = "green";
+        } else {
+            document.getElementById("result").innerHTML = "မှားသွားပြီ၊ ပြန်ကြိုးစားကြည့်ပါ။ ❌";
+            document.getElementById("result").style.color = "red";
+        }
     }
 </script>
 </body>
