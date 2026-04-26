@@ -12,9 +12,19 @@
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>မင်္ဂလာပါဗျာ!</h1>
-        <p>ဒါက ကျွန်တော့်ရဲ့ ပထမဆုံး Website လေးပါ။ မြန်မာစာတွေလည်း အမှန်အတိုင်း ပေါ်နေပါပြီ။</p>
-    </div>
+<div class="box">
+    <h1 id="title">နှုတ်ခွန်းဆက်သခြင်း</h1>
+    <button onclick="sayHello()">နှိပ်ကြည့်ပါ</button>
+</div>
+
+<script>
+    function sayHello() {
+        // ၁။ Variable တစ်ခု ဆောက်လိုက်တယ်
+        let name = "သူငယ်ချင်း"; 
+        
+        // ၂။ အဲဒီ Variable ကို သုံးပြီး Website က စာသားကို ပြောင်းလိုက်မယ်
+        document.getElementById("title").innerHTML = "မင်္ဂလာပါ " + name + " ရေ...";
+    }
+</script>
 </body>
 </html>
