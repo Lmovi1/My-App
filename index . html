@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; width: 300px; }
+        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #007bff; color: white; border-radius: 5px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>မင်္ဂလာပါဗျာ</h1>
+        <p>ကျွန်တော်ဟာ Software Engineer တစ်ယောက် ဖြစ်လာဖို့ လေ့လာနေသူပါ။ ဒါက GitHub Pages နဲ့ တင်ထားတဲ့ Website လေးပါဗျ။</p>
+        <a href="#" class="btn">နှိပ်ကြည့်ပါ</a>
+    </div>
+</body>
+</html>
